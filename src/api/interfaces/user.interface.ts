@@ -1,5 +1,5 @@
 import IAuth from "./auth.interface";
-import {Types} from "mongoose";
+import { Types } from "mongoose";
 
 interface IUser extends IAuth {
     roles?: Types.ObjectId[],

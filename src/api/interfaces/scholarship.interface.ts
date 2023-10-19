@@ -1,7 +1,9 @@
+import {Types} from "mongoose";
+
 interface IScholarship {
     description: string,
     amount: number,
-    educationLevel?: Array<string>,
+    educationLevel?: Types.ObjectId[],
     startDate: Date,
     endDate: Date,
     status: boolean

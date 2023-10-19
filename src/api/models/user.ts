@@ -1,4 +1,4 @@
-import { Schema, Types, Model, model } from "mongoose";
+import { Schema, model } from "mongoose";
 import IUser from "../interfaces/user.interface";
 
 const UserSchema = new Schema<IUser>(
@@ -6,11 +6,11 @@ const UserSchema = new Schema<IUser>(
         email: {
             type: String,
             unique: true,
-            require: true,
+            required: true,
         },
         password: {
             type: String,
-            require: true,
+            required: true,
         },
         roles: [{
             ref: "Role",

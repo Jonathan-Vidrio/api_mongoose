@@ -1,4 +1,4 @@
-import {Document, Schema, Types} from "mongoose";
+import { Document } from "mongoose";
 
 interface IAuth extends Document {
     email: string,
